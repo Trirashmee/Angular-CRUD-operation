@@ -1,0 +1,39 @@
+<!-- <br> -->
+<table
+    style="width: 1250px;padding: 10px;height:650px;border-spacing: 10px;border: 2px solid rgb(5, 5, 5);background-color: rgb(245, 204, 164);border-collapse:collapse;align-items: center;padding-top: 100px;">
+    <style>
+
+
+
+        tr,td,th
+        {
+            color: rgb(21, 21, 21);
+            text-align: center;
+            border: 1px solid rgb(237, 249, 237);
+        }
+    </style>
+    <tr class="table table-outline">
+        <th>Name</th>
+        <th>ID</th>
+        <th>Location</th>
+        <th>CTC</th>
+        <th>Experience</th>
+        <th>Edit employee details</th>
+    </tr>
+    <tr *ngFor="let ep of emplist">
+        <th>{{ep.name}}</th>
+        <th>{{ep.id}}</th>
+        <th>{{ep.location.city}},{{ep.location.state}}</th>
+        <th>{{ep.ctc}}</th>
+        <th>{{ep.exp}}</th>
+        <th> <button class="btn btn-warning btn-sm" (click)="updtempid(ep._id)">Update</button>
+            <button class="btn btn-danger btn-sm" (click)="delempid(ep._id)">Delete</button>
+        </th>
+
+    </tr>
+
+</table>
+<div class="d1">
+<a routerLink="/monproduct">
+  <h6> Add New Employee</h6></a>
+</div>

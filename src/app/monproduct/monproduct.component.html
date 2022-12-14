@@ -1,0 +1,14 @@
+<div class="d1">
+    <header><br><h4>Add Employee</h4></header><br>
+<form [formGroup]="epform" (ngSubmit)="addemp();epform.reset();">
+    <input type="text" formControlName="name" placeholder="Name"><br><br>
+    <input type="number" formControlName="id" placeholder="ID"><br><br>
+    <input type="text" formControlName="city" placeholder="City"><br><br>
+    <input type="text" formControlName="state" placeholder="State"><br><br>
+    <input type="number" formControlName="ctc" placeholder="CTC"><br><br>
+    <input type="number" formControlName="exp" placeholder="Experience"><br><br>
+    <button type="submit">Add</button>
+
+    <br><br>
+</form>
+</div>

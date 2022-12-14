@@ -1,0 +1,13 @@
+.d1{
+    height: 30px;
+    width: 150px;
+    background-color: rgb(239, 170, 124);
+    align-items: center;
+    text-align: center;
+    margin-left: 500px;
+    margin-top: 20px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
